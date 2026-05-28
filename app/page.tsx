@@ -21,7 +21,7 @@ export default function Home() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Book 15min demo
+                  Book demo
                 </a>
               </div>
             </div>
@@ -29,6 +29,16 @@ export default function Home() {
         </section>
 
         <section aria-label="Features" className="mt-24 md:mt-28">
+          <div className="mb-12 max-w-3xl md:mb-16">
+            <h2 className="text-balance text-3xl font-semibold tracking-tight md:text-5xl">
+              ComplianceTwin is a live compliance graph for AI and tech
+              products.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-black/65 md:text-lg md:leading-8">
+              Map EU and US regulations to your product, monitor what changes,
+              and turn obligations into evidence — in one connected record.
+            </p>
+          </div>
           <div className="flex flex-col gap-14">
             <div className="flex flex-col gap-6 md:flex-row md:items-start md:gap-10">
               <img
@@ -41,8 +51,7 @@ export default function Home() {
                   Instant applicability analysis
                 </div>
                 <p className="mt-3 text-base leading-7 text-black/65 md:text-lg md:leading-8">
-                  Upload your product specifications and get instant record on
-                  what EU and US technology laws apply to your product.
+                  See which EU and US laws apply to your product — instantly.
                 </p>
               </div>
             </div>
@@ -58,9 +67,8 @@ export default function Home() {
                   Live monitoring record
                 </div>
                 <p className="mt-3 text-base leading-7 text-black/65 md:text-lg md:leading-8">
-                  Keep a live record for monitoring regulatory updates with the
-                  help of a structured legal database connected to logic
-                  representations of EU–US regulations and supporting evidence.
+                  Track regulatory updates and see exactly what changed for
+                  your product.
                 </p>
                 <div className="mt-3 text-xs font-semibold text-black/55">
                   Case study: EU AI Act + Omnibus
@@ -79,9 +87,7 @@ export default function Home() {
                   Actionable workflows
                 </div>
                 <p className="mt-3 text-base leading-7 text-black/65 md:text-lg md:leading-8">
-                  Turn the record into actionable workflows for obligation
-                  mapping and evidence gathering to support your product
-                  compliance.
+                  Turn obligations into clear tasks and audit-ready evidence.
                 </p>
               </div>
             </div>

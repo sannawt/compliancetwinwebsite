@@ -49,7 +49,7 @@ export function SiteFooter() {
               target="_blank"
               rel="noreferrer"
             >
-              Book 15min demo
+              Book demo
             </a>
           </div>
         </div>
