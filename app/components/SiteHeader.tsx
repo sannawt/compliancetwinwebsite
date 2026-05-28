@@ -1,9 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const nav = [
   { href: "/#home", label: "Home" },
-  { href: "/#features", label: "Features" },
   { href: "/qa", label: "QA" },
   { href: "/#team", label: "Team" },
   { href: "/#contact", label: "Contact" },
@@ -11,23 +9,14 @@ const nav = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 border-b border-black/10 bg-[color:var(--ct-blue-100)]/80 backdrop-blur">
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-3">
         <Link
           href="/#home"
           className="group flex items-center gap-3 rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-black/40"
         >
-          <span className="win-icon">
-            <Image
-              src="/brand/compliancetwin-logo.svg"
-              alt="ComplianceTwin"
-              width={28}
-              height={28}
-              priority
-            />
-          </span>
-          <span className="text-[15px] font-semibold tracking-tight">
-            ComplianceTwin
+          <span className="ct-brand text-[15px] font-semibold tracking-tight">
+            <span className="ct-brandC">C</span>omplianceTwin
           </span>
         </Link>
 
@@ -36,7 +25,7 @@ export function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="win-nav-btn"
+              className="rounded-full px-3 py-2 text-sm font-semibold text-black/70 hover:bg-black/5 hover:text-black"
             >
               {item.label}
             </Link>
@@ -44,9 +33,17 @@ export function SiteHeader() {
         </nav>
 
         <div className="md:hidden">
-          <Link href="/qa" className="win-nav-btn">
-            QA
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link href="/qa" className="ct-btn-secondary">
+              QA
+            </Link>
+            <Link href="/#team" className="ct-btn-secondary">
+              Team
+            </Link>
+            <Link href="/#contact" className="ct-btn-secondary">
+              Contact
+            </Link>
+          </div>
         </div>
       </div>
     </header>
