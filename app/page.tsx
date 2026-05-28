@@ -1,17 +1,13 @@
+import { HeroHourglass } from "./components/HeroHourglass";
+
 export default function Home() {
   return (
     <div id="home" className="ct-wallpaper">
       <main className="mx-auto w-full max-w-6xl px-4 py-28 md:py-36">
         <section aria-label="Hero">
-          <div className="flex flex-col items-start gap-10 md:flex-row md:items-center md:gap-14">
-            <img
-              src="/hero/hourglass.png"
-              alt="Hourglass"
-              width={160}
-              height={160}
-              className="ct-hourglass ct-hourglassHero"
-            />
-            <div className="max-w-3xl">
+          <div className="flex flex-col items-start gap-8 md:flex-row md:items-start md:gap-10 lg:gap-12">
+            <HeroHourglass />
+            <div className="max-w-3xl md:pt-6 md:pl-10 lg:pl-14 lg:pt-10">
               <h1 className="text-balance text-5xl font-semibold leading-[1.02] tracking-tight md:text-7xl">
                 Wait, which laws apply to my product?
               </h1>
@@ -53,8 +49,8 @@ export default function Home() {
 
             <div className="flex flex-col gap-6 md:flex-row md:items-start md:gap-10">
               <img
-                src="/features/feature-live-monitoring.svg"
-                alt="Live monitoring record illustration"
+                src="/features/live-monitoring.png"
+                alt="Live monitoring record screenshot"
                 className="h-[220px] w-full object-cover md:h-[240px] md:w-[380px]"
               />
               <div className="max-w-2xl">
@@ -74,8 +70,8 @@ export default function Home() {
 
             <div className="flex flex-col gap-6 md:flex-row md:items-start md:gap-10">
               <img
-                src="/features/feature-workflows.svg"
-                alt="Actionable workflows illustration"
+                src="/features/workflows.png"
+                alt="Actionable workflows screenshot"
                 className="h-[220px] w-full object-cover md:h-[240px] md:w-[380px]"
               />
               <div className="max-w-2xl">
@@ -88,32 +84,6 @@ export default function Home() {
                   compliance.
                 </p>
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="team" aria-label="Team" className="mt-24 md:mt-32">
-          <div className="flex flex-col gap-6">
-            <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
-              Team
-            </h2>
-            <div className="flex flex-col gap-4 sm:flex-row sm:gap-8">
-              <a
-                className="text-base font-semibold text-black/80 underline"
-                href="https://www.linkedin.com/in/sannawongtoropainen/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Sanna Toropainen
-              </a>
-              <a
-                className="text-base font-semibold text-black/80 underline"
-                href="https://www.linkedin.com/in/dennywong/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Denny Wong
-              </a>
             </div>
           </div>
         </section>

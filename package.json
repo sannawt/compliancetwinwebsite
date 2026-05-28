@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "rules:convert": "node ./scripts/convert-rules.mjs"
+    "rules:convert": "node ./scripts/convert-rules.mjs",
+    "hourglass:sprites": "python3 ./scripts/generate-hourglass-sprites.py"
   },
   "dependencies": {
     "next": "16.2.6",

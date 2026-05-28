@@ -10,12 +10,12 @@ const nav = [
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-3">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-4">
         <Link
           href="/#home"
           className="group flex items-center gap-3 rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-black/40"
         >
-          <span className="ct-brand text-[15px] font-semibold tracking-tight">
+          <span className="ct-brand text-xl font-semibold tracking-tight md:text-2xl">
             <span className="ct-brandC">C</span>omplianceTwin
           </span>
         </Link>
