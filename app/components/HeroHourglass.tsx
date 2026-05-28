@@ -1,4 +1,4 @@
-const FRAME_COUNT = 12;
+import Image from "next/image";
 
 export function HeroHourglass() {
   return (
@@ -6,15 +6,17 @@ export function HeroHourglass() {
       className="ct-hourglassHero shrink-0"
       tabIndex={0}
       role="img"
-      aria-label="Hourglass with falling sand"
+      aria-label="Hourglass"
     >
-      <div className="ct-hourglassViewport">
-        <div
-          className="ct-hourglass ct-hourglassFilmstrip"
-          data-frames={FRAME_COUNT}
-          aria-hidden
-        />
-      </div>
+      <Image
+        src="/hero/hourglass.png"
+        alt=""
+        width={480}
+        height={480}
+        priority
+        className="ct-hourglass size-full object-contain"
+        aria-hidden
+      />
     </div>
   );
 }

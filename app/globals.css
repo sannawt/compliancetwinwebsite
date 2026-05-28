@@ -233,19 +233,17 @@ body {
 }
 
 .ct-hourglass {
+  display: block;
   image-rendering: pixelated;
   transform-origin: 50% 50%;
 }
 
 .ct-hourglassHero {
-  --hg-frames: 12;
   width: min(100%, 400px);
   aspect-ratio: 1 / 1;
   flex-shrink: 0;
   filter: drop-shadow(0 28px 60px rgba(0, 0, 0, 0.16));
-  transition:
-    transform 220ms ease,
-    filter 220ms ease;
+  transition: filter 220ms ease;
 }
 
 @media (min-width: 768px) {
@@ -254,31 +252,9 @@ body {
   }
 }
 
-.ct-hourglassViewport {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-
-.ct-hourglassFilmstrip {
-  width: calc(100% * var(--hg-frames));
-  height: 100%;
-  background-image: url("/hero/hourglass-sprite.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  animation: ctHourglassFilm 1.35s steps(12, jump-end) infinite;
-  will-change: transform;
-}
-
-.ct-hourglassHero:hover,
-.ct-hourglassHero:focus-within {
-  transform: rotate(-5deg) scale(1.03);
-  filter: drop-shadow(0 32px 70px rgba(0, 0, 0, 0.22));
-}
-
-.ct-hourglassHero:hover .ct-hourglassFilmstrip,
-.ct-hourglassHero:focus-within .ct-hourglassFilmstrip {
-  animation-duration: 0.55s;
+.ct-hourglassHero:hover .ct-hourglass,
+.ct-hourglassHero:focus-within .ct-hourglass {
+  animation: ctHourglassSpin 1s steps(12, end) infinite;
 }
 
 .ct-hourglassHero:focus-within {
@@ -287,28 +263,10 @@ body {
   border-radius: 4px;
 }
 
-/* Jump one frame at a time (sand in place), not a smooth pan across the sheet */
-@keyframes ctHourglassFilm {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    transform: translate3d(calc(-100% * (var(--hg-frames) - 1) / var(--hg-frames)), 0, 0);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .ct-hourglassFilmstrip {
-    width: 100%;
+  .ct-hourglassHero:hover .ct-hourglass,
+  .ct-hourglassHero:focus-within .ct-hourglass {
     animation: none;
-    transform: none;
-    background-size: calc(100% * var(--hg-frames)) 100%;
-    background-position: 0 0;
-  }
-
-  .ct-hourglassHero:hover,
-  .ct-hourglassHero:focus-within {
-    transform: none;
   }
 }
 

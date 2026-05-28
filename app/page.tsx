@@ -34,7 +34,7 @@ export default function Home() {
               <img
                 src="/features/instant-applicability.png"
                 alt="Instant applicability analysis screenshot"
-                className="h-[220px] w-full object-cover md:h-[240px] md:w-[380px]"
+                className="w-full shrink-0 rounded-2xl border border-black/10 bg-white object-cover shadow-[0_18px_55px_rgba(0,0,0,0.08)] md:w-[460px] md:aspect-video"
               />
               <div className="max-w-2xl">
                 <div className="text-xl font-semibold tracking-tight md:text-2xl">
@@ -51,7 +51,7 @@ export default function Home() {
               <img
                 src="/features/live-monitoring.png"
                 alt="Live monitoring record screenshot"
-                className="h-[220px] w-full object-cover md:h-[240px] md:w-[380px]"
+                className="w-full shrink-0 rounded-2xl border border-black/10 bg-white object-cover shadow-[0_18px_55px_rgba(0,0,0,0.08)] md:w-[460px] md:aspect-video"
               />
               <div className="max-w-2xl">
                 <div className="text-xl font-semibold tracking-tight md:text-2xl">
@@ -72,7 +72,7 @@ export default function Home() {
               <img
                 src="/features/workflows.png"
                 alt="Actionable workflows screenshot"
-                className="h-[220px] w-full object-cover md:h-[240px] md:w-[380px]"
+                className="w-full shrink-0 rounded-2xl border border-black/10 bg-white object-cover shadow-[0_18px_55px_rgba(0,0,0,0.08)] md:w-[460px] md:aspect-video"
               />
               <div className="max-w-2xl">
                 <div className="text-xl font-semibold tracking-tight md:text-2xl">

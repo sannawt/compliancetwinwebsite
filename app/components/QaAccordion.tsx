@@ -35,23 +35,12 @@ export function QaAccordion() {
 
       <div className="mt-6 space-y-3">
         {items.map((it) => (
-          <details
-            key={it.q}
-            className="ct-card p-5"
-          >
-            <summary className="cursor-pointer list-none select-none">
-              <div className="flex items-start justify-between gap-4">
-                <div className="text-base font-semibold leading-6">{it.q}</div>
-                <span className="ct-chip ct-chipSand">open</span>
-              </div>
-              <div className="mt-2 text-sm text-black/55">
-                Click to expand
-              </div>
-            </summary>
-            <div className="mt-4 text-sm leading-6 text-black/70">
-              {it.a}
+          <div key={it.q} className="ct-card p-5">
+            <div className="flex items-start justify-between gap-4">
+              <div className="text-base font-semibold leading-6">{it.q}</div>
             </div>
-          </details>
+            <div className="mt-4 text-sm leading-6 text-black/70">{it.a}</div>
+          </div>
         ))}
       </div>
     </div>
