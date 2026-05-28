@@ -1,0 +1,29 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B8E1FF"/>
+      <stop offset="0.55" stop-color="#E8F3FF"/>
+      <stop offset="1" stop-color="#E9D9BF"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#F4EAD8"/>
+      <stop offset="1" stop-color="#D7C19C"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="116" height="116" rx="14" fill="url(#bg)" stroke="rgba(0,0,0,0.28)" stroke-width="4"/>
+  <rect x="18" y="18" width="92" height="92" rx="10" fill="rgba(255,255,255,0.45)" stroke="rgba(0,0,0,0.18)" stroke-width="2"/>
+
+  <!-- pixel-ish CT monogram -->
+  <g transform="translate(28 32)">
+    <path d="M8 8H48V16H16V40H48V48H8V8Z" fill="rgba(0,0,0,0.82)"/>
+    <path d="M56 8H96V16H80V48H72V16H56V8Z" fill="rgba(0,0,0,0.82)"/>
+    <path d="M16 24H40V32H16V24Z" fill="url(#sand)" opacity="0.95"/>
+    <path d="M72 24H80V48H72V24Z" fill="url(#sand)" opacity="0.95"/>
+  </g>
+
+  <!-- tiny pixel accents -->
+  <rect x="26" y="94" width="6" height="6" fill="rgba(0,0,0,0.65)"/>
+  <rect x="36" y="94" width="6" height="6" fill="rgba(0,0,0,0.45)"/>
+  <rect x="46" y="94" width="6" height="6" fill="rgba(0,0,0,0.3)"/>
+</svg>
+

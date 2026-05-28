@@ -1,0 +1,59 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1024" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B8E1FF"/>
+      <stop offset="0.55" stop-color="#E8F3FF"/>
+      <stop offset="1" stop-color="#E9D9BF"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#F4EAD8"/>
+      <stop offset="1" stop-color="#D7C19C"/>
+    </linearGradient>
+    <pattern id="px" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="transparent"/>
+      <rect x="1" y="1" width="2" height="2" fill="rgba(0,0,0,0.05)"/>
+      <rect x="5" y="3" width="2" height="2" fill="rgba(0,0,0,0.05)"/>
+      <rect x="3" y="6" width="2" height="2" fill="rgba(0,0,0,0.04)"/>
+    </pattern>
+  </defs>
+
+  <rect x="0" y="0" width="1024" height="1024" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1024" height="1024" fill="url(#px)" opacity="0.85"/>
+
+  <!-- window -->
+  <rect x="120" y="160" width="784" height="640" rx="22" fill="rgba(255,255,255,0.64)" stroke="rgba(0,0,0,0.25)" stroke-width="10"/>
+  <rect x="120" y="160" width="784" height="86" rx="22" fill="rgba(30,80,175,0.9)"/>
+  <rect x="120" y="228" width="784" height="18" fill="rgba(0,0,0,0.08)"/>
+
+  <!-- left: updates feed -->
+  <rect x="178" y="288" width="420" height="452" rx="16" fill="rgba(255,255,255,0.7)" stroke="rgba(0,0,0,0.18)" stroke-width="8"/>
+  <g opacity="0.95">
+    <rect x="210" y="330" width="356" height="18" fill="rgba(0,0,0,0.16)"/>
+    <rect x="210" y="366" width="280" height="14" fill="rgba(0,0,0,0.12)"/>
+    <rect x="210" y="420" width="340" height="18" fill="rgba(0,0,0,0.15)"/>
+    <rect x="210" y="456" width="240" height="14" fill="rgba(0,0,0,0.11)"/>
+    <rect x="210" y="510" width="320" height="18" fill="rgba(0,0,0,0.14)"/>
+    <rect x="210" y="546" width="260" height="14" fill="rgba(0,0,0,0.1)"/>
+    <rect x="210" y="600" width="300" height="18" fill="rgba(0,0,0,0.13)"/>
+    <rect x="210" y="636" width="230" height="14" fill="rgba(0,0,0,0.1)"/>
+  </g>
+
+  <!-- right: database + logic graph -->
+  <g transform="translate(640 310)">
+    <!-- database -->
+    <ellipse cx="120" cy="40" rx="112" ry="36" fill="url(#sand)" stroke="rgba(0,0,0,0.25)" stroke-width="10"/>
+    <rect x="8" y="40" width="224" height="190" fill="rgba(255,255,255,0.35)" stroke="rgba(0,0,0,0.25)" stroke-width="10"/>
+    <ellipse cx="120" cy="230" rx="112" ry="36" fill="url(#sand)" stroke="rgba(0,0,0,0.25)" stroke-width="10"/>
+  </g>
+
+  <!-- logic nodes -->
+  <g opacity="0.92">
+    <circle cx="710" cy="640" r="22" fill="rgba(255,255,255,0.65)" stroke="rgba(0,0,0,0.3)" stroke-width="8"/>
+    <circle cx="790" cy="600" r="18" fill="rgba(184,225,255,0.55)" stroke="rgba(0,0,0,0.28)" stroke-width="8"/>
+    <circle cx="850" cy="680" r="20" fill="rgba(244,234,216,0.7)" stroke="rgba(0,0,0,0.28)" stroke-width="8"/>
+    <path d="M732 630 L772 610" stroke="rgba(0,0,0,0.25)" stroke-width="10"/>
+    <path d="M804 614 L836 668" stroke="rgba(0,0,0,0.25)" stroke-width="10"/>
+    <path d="M728 650 L832 676" stroke="rgba(0,0,0,0.18)" stroke-width="8"/>
+  </g>
+</svg>
+

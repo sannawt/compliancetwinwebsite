@@ -1,0 +1,58 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1024" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B8E1FF"/>
+      <stop offset="0.55" stop-color="#E8F3FF"/>
+      <stop offset="1" stop-color="#E9D9BF"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#F4EAD8"/>
+      <stop offset="1" stop-color="#D7C19C"/>
+    </linearGradient>
+    <pattern id="px" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="transparent"/>
+      <rect x="0" y="2" width="2" height="2" fill="rgba(0,0,0,0.05)"/>
+      <rect x="4" y="0" width="2" height="2" fill="rgba(0,0,0,0.05)"/>
+      <rect x="6" y="6" width="2" height="2" fill="rgba(0,0,0,0.04)"/>
+    </pattern>
+  </defs>
+
+  <rect x="0" y="0" width="1024" height="1024" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1024" height="1024" fill="url(#px)" opacity="0.85"/>
+
+  <!-- window -->
+  <rect x="120" y="160" width="784" height="640" rx="22" fill="rgba(255,255,255,0.64)" stroke="rgba(0,0,0,0.25)" stroke-width="10"/>
+  <rect x="120" y="160" width="784" height="86" rx="22" fill="rgba(30,80,175,0.9)"/>
+  <rect x="120" y="228" width="784" height="18" fill="rgba(0,0,0,0.08)"/>
+
+  <!-- flowchart -->
+  <g opacity="0.95">
+    <rect x="190" y="310" width="220" height="110" rx="16" fill="rgba(184,225,255,0.45)" stroke="rgba(0,0,0,0.25)" stroke-width="8"/>
+    <rect x="450" y="310" width="220" height="110" rx="16" fill="rgba(244,234,216,0.55)" stroke="rgba(0,0,0,0.25)" stroke-width="8"/>
+    <rect x="710" y="310" width="150" height="110" rx="16" fill="rgba(255,255,255,0.55)" stroke="rgba(0,0,0,0.25)" stroke-width="8"/>
+
+    <path d="M410 365H450" stroke="rgba(0,0,0,0.25)" stroke-width="10"/>
+    <path d="M670 365H710" stroke="rgba(0,0,0,0.25)" stroke-width="10"/>
+
+    <rect x="320" y="480" width="260" height="120" rx="18" fill="rgba(255,255,255,0.65)" stroke="rgba(0,0,0,0.25)" stroke-width="8"/>
+    <path d="M560 420V480" stroke="rgba(0,0,0,0.22)" stroke-width="10"/>
+  </g>
+
+  <!-- evidence folder -->
+  <g transform="translate(210 640)">
+    <path d="M40 40H250C270 40 286 56 286 76V210C286 230 270 246 250 246H40C20 246 4 230 4 210V76C4 56 20 40 40 40Z" fill="url(#sand)" stroke="rgba(0,0,0,0.25)" stroke-width="10"/>
+    <path d="M4 90H286" stroke="rgba(0,0,0,0.18)" stroke-width="10"/>
+    <rect x="46" y="118" width="170" height="16" fill="rgba(0,0,0,0.14)"/>
+    <rect x="46" y="150" width="200" height="14" fill="rgba(0,0,0,0.11)"/>
+    <rect x="46" y="180" width="140" height="14" fill="rgba(0,0,0,0.1)"/>
+  </g>
+
+  <!-- checkboxes -->
+  <g opacity="0.92">
+    <rect x="560" y="650" width="28" height="28" fill="rgba(255,255,255,0.7)" stroke="rgba(0,0,0,0.25)" stroke-width="8"/>
+    <path d="M565 665L572 672L584 658" stroke="rgba(0,0,0,0.65)" stroke-width="8" stroke-linecap="square"/>
+    <rect x="560" y="700" width="28" height="28" fill="rgba(255,255,255,0.7)" stroke="rgba(0,0,0,0.25)" stroke-width="8"/>
+    <rect x="560" y="750" width="28" height="28" fill="rgba(255,255,255,0.7)" stroke="rgba(0,0,0,0.25)" stroke-width="8"/>
+  </g>
+</svg>
+
