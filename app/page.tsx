@@ -46,7 +46,8 @@ export default function Home() {
                   Instant applicability analysis
                 </div>
                 <p className="mt-3 text-base leading-7 text-black/65 md:text-lg md:leading-8">
-                  See which EU and US laws apply to your product — instantly.
+                  Upload your product specifications and get instant record on
+                  what EU and US technology laws apply to your product.
                 </p>
               </div>
             </div>
@@ -62,8 +63,9 @@ export default function Home() {
                   Live monitoring record
                 </div>
                 <p className="mt-3 text-base leading-7 text-black/65 md:text-lg md:leading-8">
-                  Track regulatory updates and see exactly what changed for
-                  your product.
+                  Keep a live record for monitoring regulatory updates with the
+                  help of a structured legal database connected to logic
+                  representations of EU–US regulations and supporting evidence.
                 </p>
                 <div className="mt-3 text-xs font-semibold text-black/55">
                   Case study: EU AI Act + Omnibus
@@ -82,7 +84,9 @@ export default function Home() {
                   Actionable workflows
                 </div>
                 <p className="mt-3 text-base leading-7 text-black/65 md:text-lg md:leading-8">
-                  Turn obligations into clear tasks and audit-ready evidence.
+                  Turn the record into actionable workflows for obligation
+                  mapping and evidence gathering to support your product
+                  compliance.
                 </p>
               </div>
             </div>
